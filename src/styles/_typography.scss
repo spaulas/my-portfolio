@@ -1,0 +1,50 @@
+@import "~@fontsource/montserrat/200.css";
+@import "~@fontsource/montserrat/300.css";
+
+@mixin logo-title--large {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 200px;
+  line-height: 200px;
+}
+
+@mixin logo-title--small {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 96px;
+  line-height: 96px;
+}
+
+@mixin project-title--large {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 144px;
+  line-height: 144px;
+}
+
+@mixin button {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+@mixin body-text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 32px;
+}
+
+@mixin notes {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 20px;
+}

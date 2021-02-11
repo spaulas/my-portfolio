@@ -1,5 +1,6 @@
 // tsconfig.json
 {
+    "extends": "./tsconfig.paths.json",
     "compilerOptions": {
       "module": "commonjs",
       "target": "esnext",

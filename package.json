@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@fontsource/montserrat": "^4.2.1",
+    "@storybook/addon-graphql": "^6.1.17",
     "@storybook/addon-knobs": "^6.1.17",
     "@storybook/preset-scss": "^1.0.3",
     "@types/classnames": "^2.2.11",
@@ -61,8 +62,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "jest",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "storybook": "NODE_ENV=production start-storybook -p 6006 -s public",
+    "build-storybook": "NODE_ENV=production build-storybook -s public"
   },
   "repository": {
     "type": "git",

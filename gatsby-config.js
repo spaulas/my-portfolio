@@ -42,6 +42,7 @@ module.exports = {
         common: path.join(__dirname, "src/components/common"),
         test: path.join(__dirname, "src/test"),
         styles: path.join(__dirname, "src/styles"),
+        images: path.join(__dirname, "src/images"),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

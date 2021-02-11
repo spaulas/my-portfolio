@@ -5,6 +5,7 @@
             "components/*": ["src/components/*"],
             "common/*": ["src/components/common/*"],
             "pages/*": ["src/pages/*"],
+            "images/*": ["src/images/*"],
             "test/*": ["src/test/*"],
             "styles/*": ["src/styles/*"],
           },

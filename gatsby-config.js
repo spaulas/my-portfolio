@@ -11,6 +11,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-typescript",
+    "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -39,6 +40,8 @@ module.exports = {
         pages: path.join(__dirname, "src/pages"),
         components: path.join(__dirname, "src/components"),
         common: path.join(__dirname, "src/components/common"),
+        test: path.join(__dirname, "src/test"),
+        styles: path.join(__dirname, "src/styles"),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

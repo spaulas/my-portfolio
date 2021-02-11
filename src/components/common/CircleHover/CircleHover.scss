@@ -1,0 +1,72 @@
+@import "styles/imports";
+
+.circle-hover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  transition: 0.2s ease;
+
+  // show border and hide cursor
+  &:hover {
+    border-color: $light-blue;
+    cursor: none;
+  }
+
+  // title container starts at 0 height to make the text slide up
+  &__title-container {
+    height: 0;
+    transition: 0.2s ease;
+  }
+
+  // title should start with opacity 0
+  &__title {
+    @include notes;
+    color: $light-blue;
+    margin-bottom: 8px;
+    opacity: 0;
+    transition: 0.3s ease;
+    text-align: center;
+  }
+
+  // if there is a title, then it should be shown
+  &--show-title:hover & {
+    &__title-container {
+      height: 20px;
+    }
+
+    &__title {
+      opacity: 1;
+    }
+  }
+
+  // size for tech icons
+  &--tech {
+    width: 136px;
+    height: 136px;
+  }
+
+  // size for action icons
+  &--action {
+    width: 88px;
+    height: 88px;
+  }
+
+  // size for social icons
+  &--social {
+    width: 168px;
+    height: 168px;
+
+     .circle-hover__title {
+      @include button;
+    }
+
+    &.circle-hover--show-title:hover {
+      & > .circle-hover__title-container {
+        height: 40px;
+      }
+    }
+  }
+}

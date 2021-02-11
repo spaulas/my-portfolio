@@ -1,0 +1,29 @@
+$light-blue: #bac7db;
+
+$navy-blue-medium: #1d3354;
+$navy-blue-dark: #14233a;
+$navy-blue-light: #4a5b76;
+$navy-blue-lighter: #8e99a9;
+
+$white: #fff;
+$black: #000;
+
+@mixin gradient-radial-navy-blue-medium {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    $navy-blue-medium 0%,
+    $navy-blue-dark 100%
+  );
+}
+
+@mixin gradient-radial-navy-blue-light {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    #485b79 0%,
+    #4c5d78 74.48%,
+    #435470 100%
+  );
+}
+
+$solitaire-red: #9b2828;
+$social-network-pink: #e97569;

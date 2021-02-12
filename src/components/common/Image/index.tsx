@@ -6,34 +6,16 @@ import { MatchNode, Props } from "./types.d";
 const Image = ({ src, ...rest }: Props) => {
   const data: {
     images: { edges: Array<{ node: any }> };
-  } = useStaticQuery(graphql`
-    query {
-      images: allFile(
-        filter: { internal: { mediaType: { regex: "/image/" } } }
-      ) {
-        edges {
-          node {
-            relativePath
-            extension
-            publicURL
-            childImageSharp {
-              fluid(maxWidth: 600) {
-                ...GatsbyImageSharpFluid
-              }
-            }
-          }
-        }
-      }
-    }
-  `);
+  } = useStaticQuery(queryString);
+
   const match:
     | {
         node: MatchNode;
       }
     | undefined = useMemo(
-      () => data.images.edges.find(({ node }) => src === node.relativePath),
-      [data, src]
-    );
+    () => data.images.edges.find(({ node }) => src === node.relativePath),
+    [data, src]
+  );
 
   if (!match) return null;
 
@@ -47,3 +29,16 @@ const Image = ({ src, ...rest }: Props) => {
 };
 
 export default Image;
+
+export const queryString = graphql`
+  query {
+    allFile {
+      edges {
+        node {
+          name
+          publicURL
+        }
+      }
+    }
+  }
+`;

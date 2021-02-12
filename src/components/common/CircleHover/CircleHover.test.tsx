@@ -14,7 +14,7 @@ describe("<CircleHover />", () => {
     it(`according to the type: ${type}`, () => {
       render(<CircleHover type={type} />);
 
-      // should not have --${type}
+      // should have --${type}
       expect(
         container.querySelector(`div.circle-hover.circle-hover--${type}`)
       ).not.toBeNull();

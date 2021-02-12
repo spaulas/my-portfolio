@@ -26,7 +26,7 @@ describe("<CircleHover />", () => {
       render(<CircleHover type="action" title={title} />);
 
       const titleComponent = container.querySelector(
-        "div.circle-hover>.circle-hover__title"
+        "div.circle-hover>.circle-hover__title-container>.circle-hover__title"
       );
 
       // should always have circle-hover__title

@@ -1,0 +1,78 @@
+@import "styles/imports.scss";
+
+.color-icon {
+  &__container {
+    position: relative;
+    width: 100%;
+  }
+
+  &__altered {
+    opacity: 1;
+    transition: 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &__color {
+    opacity: 0;
+    transition: 0.5s ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &:hover & {
+    &__altered {
+      opacity: 0;
+    }
+    &__color {
+      opacity: 1;
+    }
+  }
+
+  &--social & {
+    &__container {
+      height: 72px;
+    }
+
+    &__altered {
+      height: 72px;
+    }
+
+    &__color {
+      height: 72px;
+    }
+  }
+
+  &--tech & {
+    &__container {
+      height: 56px;
+    }
+
+    &__altered {
+      height: 56px;
+    }
+
+    &__color {
+      height: 56px;
+    }
+  }
+
+  &--smaller & {
+    &__container {
+      height: 40px;
+    }
+
+    &__altered {
+      height: 40px;
+    }
+
+    &__color {
+      height: 40px;
+    }
+
+  }
+}

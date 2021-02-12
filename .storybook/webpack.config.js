@@ -10,6 +10,7 @@ module.exports = async ({ config }) => {
             'styles': resolve('../src/styles'),
             'common': resolve('../src/components/common'),
             'components': resolve('../src/components'),
+            'images': resolve('../src/images'),
             public: resolve('../public'),
         },
     });

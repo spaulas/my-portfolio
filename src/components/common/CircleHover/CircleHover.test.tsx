@@ -14,7 +14,7 @@ describe("<CircleHover />", () => {
     it(`according to the type: ${type}`, () => {
       render(<CircleHover type={type} />);
 
-      // should not have --${type}
+      // should have --${type}
       expect(
         container.querySelector(`div.circle-hover.circle-hover--${type}`)
       ).not.toBeNull();
@@ -26,7 +26,7 @@ describe("<CircleHover />", () => {
       render(<CircleHover type="action" title={title} />);
 
       const titleComponent = container.querySelector(
-        "div.circle-hover>.circle-hover__title"
+        "div.circle-hover>.circle-hover__title-container>.circle-hover__title"
       );
 
       // should always have circle-hover__title

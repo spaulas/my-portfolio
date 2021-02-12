@@ -59,8 +59,9 @@
     width: 168px;
     height: 168px;
 
-     .circle-hover__title {
-      @include button;
+    .circle-hover__title {
+      @include body-text;
+      font-weight: 200;
     }
 
     &.circle-hover--show-title:hover {

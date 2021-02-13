@@ -1,0 +1,16 @@
+@import "@styles/imports";
+
+.project-title {
+  background: $navy-blue-medium;
+  padding: 48px 72px;
+  text-align: center;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 120px;
+
+  &__title {
+    @include project-title--large;
+    color: $white;
+    font-variant: small-caps;
+  }
+}

@@ -11,7 +11,7 @@ import ColorIcon from "./index";
 import { CreateContainerType, createContainer } from "@test/domManipulators";
 import { Props } from "./types.d";
 
-const icon = require("images/icons/light-blue/social-icons/icon-light-blue__github.png");
+const icon = require("@images/icons/light-blue/social-icons/icon-light-blue__github.png");
 
 describe("<ColorIcon />", () => {
   let container: CreateContainerType["container"];

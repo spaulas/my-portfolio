@@ -1,6 +1,6 @@
 import React from "react";
 import ColorIcon from "@common/Icons/ColorIcon";
-import { Props } from "./types.d";
+import { Props } from "./types";
 import { TIMELINE, TimelineText } from "@constants/Timeline";
 import "./Timeline.scss";
 

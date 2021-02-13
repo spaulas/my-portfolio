@@ -1,6 +1,6 @@
 import React from "react";
 import CircleHover from "./index";
-import { CreateContainerType, createContainer } from "test/domManipulators";
+import { CreateContainerType, createContainer } from "@test/domManipulators";
 import { Props } from "./types.d";
 
 describe("<CircleHover />", () => {

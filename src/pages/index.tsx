@@ -1,7 +1,7 @@
 import React from "react";
 
-import Image from "common/Image";
-import SEO from "common/SEO";
+import Image from "@common/Image";
+import SEO from "@common/SEO";
 
 const IndexPage = () => (
   <>

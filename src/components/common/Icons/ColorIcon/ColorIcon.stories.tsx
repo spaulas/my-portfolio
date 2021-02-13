@@ -1,4 +1,3 @@
-/* eslint-disable indent */
 /* eslint-disable no-undef */
 import React from "react";
 import { Props } from "./types";
@@ -96,160 +95,160 @@ export default {
 export const ColorIconC = (args: Props): JSX.Element => {
   let props = undefined;
   switch (args.title) {
-    case "Github":
-      props = {
-        title: "Github",
-        srcColor: githubColor,
-        srcAltered: githubLightBlue,
-        type: "social" as "social",
-      };
-      break;
-    case "Antd":
-      props = {
-        title: "Antd",
-        srcColor: antdColor,
-        srcAltered: antdLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "CSS":
-      props = {
-        title: "CSS",
-        srcColor: cssColor,
-        srcAltered: cssLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "Cypress":
-      props = {
-        title: "Cypress",
-        srcColor: cypressColor,
-        srcAltered: cypressLightBlue,
-        smaller: true,
-        type: "tech" as "tech",
-      };
-      break;
-    case "Firebase":
-      props = {
-        title: "Firebase",
-        srcColor: firebaseColor,
-        srcAltered: firebaseLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "HTML":
-      props = {
-        title: "HTML",
-        srcColor: htmlColor,
-        srcAltered: htmlLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "Javascript":
-      props = {
-        title: "Javascript",
-        srcColor: javascriptColor,
-        srcAltered: javascriptLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "Jest":
-      props = {
-        title: "Jest",
-        srcColor: jestColor,
-        srcAltered: jestLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "Less":
-      props = {
-        title: "Less",
-        srcColor: lessColor,
-        srcAltered: lessLightBlue,
-        smaller: true,
-        type: "tech" as "tech",
-      };
-      break;
-    case "MaterialUI":
-      props = {
-        title: "MaterialUI",
-        srcColor: materialuiColor,
-        srcAltered: materialuiLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "MySQL":
-      props = {
-        title: "MySQL",
-        srcColor: mysqlColor,
-        srcAltered: mysqlLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "Node":
-      props = {
-        title: "Node",
-        srcColor: nodeColor,
-        srcAltered: nodeLightBlue,
-        smaller: true,
-        type: "tech" as "tech",
-      };
-      break;
-    case "PHP":
-      props = {
-        title: "PHP",
-        srcColor: phpColor,
-        srcAltered: phpLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "React":
-      props = {
-        title: "React",
-        srcColor: reactColor,
-        srcAltered: reactLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "Redux-Saga":
-      props = {
-        title: "Redux-Saga",
-        srcColor: reduxSagaColor,
-        srcAltered: reduxSagaLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "Redux":
-      props = {
-        title: "Redux",
-        srcColor: reduxColor,
-        srcAltered: reduxLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "Sass":
-      props = {
-        title: "Sass",
-        srcColor: sassColor,
-        srcAltered: sassLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    case "Typescript":
-      props = {
-        title: "Typescript",
-        srcColor: typescriptColor,
-        srcAltered: typescriptLightBlue,
-        type: "tech" as "tech",
-      };
-      break;
-    default:
-      props = {
-        title: "Linkedin",
-        srcColor: linkedinColor,
-        srcAltered: linkedinLightBlue,
-        type: "social" as "social",
-      };
+  case "Github":
+    props = {
+      title: "Github",
+      srcColor: githubColor,
+      srcAltered: githubLightBlue,
+      type: "social" as "social",
+    };
+    break;
+  case "Antd":
+    props = {
+      title: "Antd",
+      srcColor: antdColor,
+      srcAltered: antdLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "CSS":
+    props = {
+      title: "CSS",
+      srcColor: cssColor,
+      srcAltered: cssLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "Cypress":
+    props = {
+      title: "Cypress",
+      srcColor: cypressColor,
+      srcAltered: cypressLightBlue,
+      smaller: true,
+      type: "tech" as "tech",
+    };
+    break;
+  case "Firebase":
+    props = {
+      title: "Firebase",
+      srcColor: firebaseColor,
+      srcAltered: firebaseLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "HTML":
+    props = {
+      title: "HTML",
+      srcColor: htmlColor,
+      srcAltered: htmlLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "Javascript":
+    props = {
+      title: "Javascript",
+      srcColor: javascriptColor,
+      srcAltered: javascriptLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "Jest":
+    props = {
+      title: "Jest",
+      srcColor: jestColor,
+      srcAltered: jestLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "Less":
+    props = {
+      title: "Less",
+      srcColor: lessColor,
+      srcAltered: lessLightBlue,
+      smaller: true,
+      type: "tech" as "tech",
+    };
+    break;
+  case "MaterialUI":
+    props = {
+      title: "MaterialUI",
+      srcColor: materialuiColor,
+      srcAltered: materialuiLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "MySQL":
+    props = {
+      title: "MySQL",
+      srcColor: mysqlColor,
+      srcAltered: mysqlLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "Node":
+    props = {
+      title: "Node",
+      srcColor: nodeColor,
+      srcAltered: nodeLightBlue,
+      smaller: true,
+      type: "tech" as "tech",
+    };
+    break;
+  case "PHP":
+    props = {
+      title: "PHP",
+      srcColor: phpColor,
+      srcAltered: phpLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "React":
+    props = {
+      title: "React",
+      srcColor: reactColor,
+      srcAltered: reactLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "Redux-Saga":
+    props = {
+      title: "Redux-Saga",
+      srcColor: reduxSagaColor,
+      srcAltered: reduxSagaLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "Redux":
+    props = {
+      title: "Redux",
+      srcColor: reduxColor,
+      srcAltered: reduxLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "Sass":
+    props = {
+      title: "Sass",
+      srcColor: sassColor,
+      srcAltered: sassLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  case "Typescript":
+    props = {
+      title: "Typescript",
+      srcColor: typescriptColor,
+      srcAltered: typescriptLightBlue,
+      type: "tech" as "tech",
+    };
+    break;
+  default:
+    props = {
+      title: "Linkedin",
+      srcColor: linkedinColor,
+      srcAltered: linkedinLightBlue,
+      type: "social" as "social",
+    };
   }
 
   return <ColorIcon {...props} storybook />;

@@ -1,4 +1,4 @@
-@import "styles/imports.scss";
+@import "@styles/imports.scss";
 
 .color-icon {
   &__container {
@@ -65,6 +65,7 @@
     &:hover {
       & > .color-icon__container {
         height: 52px;
+        transition: 0.5s ease;
       }
     }
   }
@@ -75,7 +76,7 @@
     }
 
     &__altered {
-      transition: 0.2s ease;
+      transition: 0.1s ease;
       height: 32px;
     }
 

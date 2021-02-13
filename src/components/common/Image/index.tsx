@@ -13,9 +13,9 @@ const Image = ({ src, ...rest }: Props) => {
         node: MatchNode;
       }
     | undefined = useMemo(
-    () => data.images.edges.find(({ node }) => src === node.relativePath),
-    [data, src]
-  );
+      () => data.images?.edges.find(({ node }) => src === node.relativePath),
+      [data, src]
+    );
 
   if (!match) return null;
 

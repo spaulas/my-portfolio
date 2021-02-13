@@ -7,6 +7,7 @@ import classNames from "classnames";
 
 function ColorIcon({
   title,
+  subtitle,
   type,
   srcAltered,
   srcColor,
@@ -20,7 +21,7 @@ function ColorIcon({
   });
 
   return (
-    <CircleHover type={type} title={title} extraClass={colorIconClass}>
+    <CircleHover type={type} title={title} subtitle={subtitle} extraClass={colorIconClass}>
       {!storybook ? (
         <div className="color-icon__container">
           <Image src={srcAltered} className="color-icon__altered" />

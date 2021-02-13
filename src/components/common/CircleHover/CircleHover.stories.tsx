@@ -9,7 +9,7 @@ export default {
     type: {
       control: {
         type: "select",
-        options: ["tech", "social", "action"],
+        options: ["tech", "social", "action", "timeline"],
       },
     },
   },
@@ -23,4 +23,4 @@ export const CircleHoverC = (args: Props): JSX.Element => {
   );
 };
 
-CircleHoverC.args = { title: "Title", type: "tech" };
+CircleHoverC.args = { title: "Title", subtitle: "", type: "tech" };

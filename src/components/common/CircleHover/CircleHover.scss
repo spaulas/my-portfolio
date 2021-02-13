@@ -13,22 +13,45 @@
   &:hover {
     border-color: $light-blue;
     cursor: none;
+
+    &.circle-hover--timeline {
+      width: 136px;
+      height: 136px;
+    }
   }
 
   // title container starts at 0 height to make the text slide up
-  &__title-container {
+  @mixin title-container {
     height: 0;
     transition: 0.2s ease;
+    margin-bottom: 8px;
   }
 
   // title should start with opacity 0
-  &__title {
+  @mixin title {
     @include notes;
     color: $light-blue;
-    margin-bottom: 8px;
     opacity: 0;
     transition: 0.3s ease;
     text-align: center;
+  }
+
+  &__title-container {
+    @include title-container;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__subtitle-container {
+    @include title-container;
+    margin-bottom: 0;
+    margin-top: 8px;
+  }
+
+  &__subtitle {
+    @include title;
   }
 
   // if there is a title, then it should be shown
@@ -38,6 +61,17 @@
     }
 
     &__title {
+      opacity: 1;
+    }
+  }
+
+  // if there is a subtitle, then it should be shown
+  &--show-subtitle:hover & {
+    &__subtitle-container {
+      height: 20px;
+    }
+
+    &__subtitle {
       opacity: 1;
     }
   }
@@ -68,6 +102,37 @@
       & > .circle-hover__title-container {
         height: 40px;
       }
+    }
+  }
+
+  // size for timeline icons
+  &--timeline {
+    width: 48px;
+    height: 48px;
+    background: $light-blue;
+    transition: 0.3s ease;
+
+    &:hover {
+      width: 136px;
+      height: 136px;
+    }
+
+    .circle-hover__title-container {
+      transition: 0.1s ease;
+    }
+
+    .circle-hover__title {
+      color: $navy-blue-dark;
+      transition: 0.2s ease;
+    }
+
+    .circle-hover__subtitle-container {
+      transition: 0.1s ease;
+    }
+
+    .circle-hover__subtitle {
+      color: $navy-blue-dark;
+      transition: 0.2s ease;
     }
   }
 }

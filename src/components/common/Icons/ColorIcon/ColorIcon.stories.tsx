@@ -3,6 +3,10 @@ import React from "react";
 import { Props } from "./types";
 import ColorIcon from "./index";
 
+/***************
+ * TECH ICONS
+ ***************/
+
 const githubLightBlue = require("images/icons/light-blue/social-icons/icon-light-blue__github.png");
 const githubColor = require("images/icons/color/social-icons/icon-color__github.png");
 
@@ -60,8 +64,24 @@ const sassColor = require("images/icons/color/tech-icons/icon-color__sass.svg");
 const typescriptLightBlue = require("images/icons/light-blue/tech-icons/icon-light-blue__typescript.png");
 const typescriptColor = require("images/icons/color/tech-icons/icon-color__typescript.png");
 
+/***************
+ * TIMELINE ICONS
+ ***************/
+
+const birthNavyBlue = require("images/icons/navy-blue/timeline-icons/icon-navy-blue__birth.png");
+const birthColor = require("images/icons/color/timeline-icons/icon-color__birth.png");
+
+const hapibotNavyBlue = require("images/icons/navy-blue/timeline-icons/icon-navy-blue__hapibot.png");
+const hapibotColor = require("images/icons/color/timeline-icons/icon-color__hapibot.png");
+
+const uaNavyBlue = require("images/icons/navy-blue/timeline-icons/icon-navy-blue__ua.png");
+const uaColor = require("images/icons/color/timeline-icons/icon-color__ua.png");
+
+const wavecomNavyBlue = require("images/icons/navy-blue/timeline-icons/icon-navy-blue__wavecom.png");
+const wavecomColor = require("images/icons/color/timeline-icons/icon-color__wavecom.png");
+
 export default {
-  title: "Common",
+  title: "Common/Icons",
   argTypes: {
     title: {
       control: {
@@ -86,6 +106,10 @@ export default {
           "Redux",
           "Sass",
           "Typescript",
+          "Birth",
+          "Hapibot",
+          "UA",
+          "Wavecom",
         ],
       },
     },
@@ -240,6 +264,42 @@ export const ColorIconC = (args: Props): JSX.Element => {
       srcColor: typescriptColor,
       srcAltered: typescriptLightBlue,
       type: "tech" as "tech",
+    };
+    break;
+  case "Birth":
+    props = {
+      title: "Birth",
+      subtitle: "1995",
+      srcColor: birthColor,
+      srcAltered: birthNavyBlue,
+      type: "timeline" as "timeline",
+    };
+    break;
+  case "Hapibot":
+    props = {
+      title: "Hapibot",
+      subtitle: "2020",
+      srcColor: hapibotColor,
+      srcAltered: hapibotNavyBlue,
+      type: "timeline" as "timeline",
+    };
+    break;
+  case "UA":
+    props = {
+      title: "UA",
+      subtitle: "2013",
+      srcColor: uaColor,
+      srcAltered: uaNavyBlue,
+      type: "timeline" as "timeline",
+    };
+    break;
+  case "Wavecom":
+    props = {
+      title: "Wavecom",
+      subtitle: "2018",
+      srcColor: wavecomColor,
+      srcAltered: wavecomNavyBlue,
+      type: "timeline" as "timeline",
     };
     break;
   default:

@@ -21,19 +21,28 @@ describe("<CircleHover />", () => {
     });
   };
 
-  const itAccordingToTitle = (title: Props["title"]) => {
-    it(`it is ${title ? "defined" : "undefined"}`, () => {
-      render(<CircleHover type="action" title={title} />);
+  const itAccordingToTitle = (
+    {
+      title,
+      subtitle,
+    }: {
+      title?: string;
+      subtitle?: string;
+    },
+    className: string
+  ) => {
+    it(`it is ${title || subtitle ? "defined" : "undefined"}`, () => {
+      render(<CircleHover type="action" title={title} subtitle={subtitle} />);
 
       const titleComponent = container.querySelector(
-        "div.circle-hover>.circle-hover__title-container>.circle-hover__title"
+        `div.circle-hover>.circle-hover__${className}-container>.circle-hover__${className}`
       );
 
       // should always have circle-hover__title
       expect(titleComponent).not.toBeNull();
 
       // check the content
-      expect(titleComponent?.textContent).toEqual(title || "");
+      expect(titleComponent?.textContent).toEqual(title || subtitle || "");
     });
   };
 
@@ -49,6 +58,7 @@ describe("<CircleHover />", () => {
     itAccordingToType("tech");
     itAccordingToType("social");
     itAccordingToType("action");
+    itAccordingToType("timeline");
 
     it("according to the title: with", () => {
       render(<CircleHover type="action" title="Title" />);
@@ -69,7 +79,12 @@ describe("<CircleHover />", () => {
   });
 
   describe("renders the title accordingly when", () => {
-    itAccordingToTitle("Title");
-    itAccordingToTitle(undefined);
+    itAccordingToTitle({ title: "Title" }, "title");
+    itAccordingToTitle({}, "title");
+  });
+
+  describe("renders the subtitle accordingly when", () => {
+    itAccordingToTitle({ subtitle: "Title" }, "subtitle");
+    itAccordingToTitle({}, "subtitle");
   });
 });

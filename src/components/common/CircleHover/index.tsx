@@ -5,6 +5,7 @@ import "./CircleHover.scss";
 
 function CircleHover({
   title,
+  subtitle,
   type,
   extraClass,
   children,
@@ -12,6 +13,7 @@ function CircleHover({
   const circleHoverClass = classNames("circle-hover", extraClass, {
     [`circle-hover--${type}`]: type,
     "circle-hover--show-title": !!title,
+    "circle-hover--show-subtitle": !!subtitle,
   });
 
   return (
@@ -22,6 +24,10 @@ function CircleHover({
       </div>
 
       {children}
+
+      <div className="circle-hover__subtitle-container">
+        <span className="circle-hover__subtitle">{subtitle}</span>
+      </div>
     </div>
   );
 }

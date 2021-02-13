@@ -73,6 +73,7 @@ describe("<ColorIcon />", () => {
   describe("renders the wrapper with the correct class name", () => {
     itAccordingToType("tech");
     itAccordingToType("social");
+    itAccordingToType("timeline");
 
     itAccordingToSize(true);
     itAccordingToSize(false);

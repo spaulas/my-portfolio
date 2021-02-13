@@ -1,11 +1,11 @@
-import birthColor from "images/icons/color/timeline-icons/icon-color__birth.png";
-import birthNavyBlue from "images/icons/navy-blue/timeline-icons/icon-navy-blue__birth.png";
-import uaColor from "images/icons/color/timeline-icons/icon-color__ua.png";
-import uaNavyBlue from "images/icons/navy-blue/timeline-icons/icon-navy-blue__ua.png";
-import wavecomColor from "images/icons/color/timeline-icons/icon-color__wavecom.png";
-import wavecomNavyBlue from "images/icons/navy-blue/timeline-icons/icon-navy-blue__wavecom.png";
-import hapibotColor from "images/icons/color/timeline-icons/icon-color__hapibot.png";
-import hapibotNavyBlue from "images/icons/navy-blue/timeline-icons/icon-navy-blue__hapibot.png";
+import birthColor from "@images/icons/color/timeline-icons/icon-color__birth.png";
+import birthNavyBlue from "@images/icons/navy-blue/timeline-icons/icon-navy-blue__birth.png";
+import uaColor from "@images/icons/color/timeline-icons/icon-color__ua.png";
+import uaNavyBlue from "@images/icons/navy-blue/timeline-icons/icon-navy-blue__ua.png";
+import wavecomColor from "@images/icons/color/timeline-icons/icon-color__wavecom.png";
+import wavecomNavyBlue from "@images/icons/navy-blue/timeline-icons/icon-navy-blue__wavecom.png";
+import hapibotColor from "@images/icons/color/timeline-icons/icon-color__hapibot.png";
+import hapibotNavyBlue from "@images/icons/navy-blue/timeline-icons/icon-navy-blue__hapibot.png";
 
 export type TimelineText = {
   ID: string;

@@ -1,0 +1,44 @@
+@import "styles/imports";
+
+.timeline {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 880px;
+  height: 8px;
+  position: relative;
+  background: $navy-blue-medium;
+  border-radius: 8px;
+  margin-top: 68px;
+  margin-left: 68px;
+
+  &__icon {
+      &--birth {
+          position: absolute;
+          top: 50%;
+          left: 0;
+          transform: translate(-50%, -50%);
+      }
+
+      &--ua {
+        position: absolute;
+          top: 50%;
+          left: 609px;
+          transform: translate(-50%, -50%);
+      }
+
+      &--wavecom {
+        position: absolute;
+          top: 50%;
+          left: 778px;
+          transform: translate(-50%, -50%);
+      }
+
+      &--hapibot {
+        position: absolute;
+          top: 50%;
+          left: 846px;
+          transform: translate(-50%, -50%);
+      }
+  }
+}

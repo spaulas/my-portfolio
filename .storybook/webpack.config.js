@@ -11,6 +11,7 @@ module.exports = async ({ config }) => {
             'common': resolve('../src/components/common'),
             'components': resolve('../src/components'),
             'images': resolve('../src/images'),
+            'constants': resolve('../src/constants'),
             public: resolve('../public'),
         },
     });

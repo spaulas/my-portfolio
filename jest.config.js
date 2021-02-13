@@ -8,6 +8,7 @@ module.exports = {
     "components/(.*)": "<rootDir>/src/components/$1",
     "common/(.*)": "<rootDir>/src/components/common/$1",
     "pages/(.*)": "<rootDir>/src/pages/$1",
+    "constants/(.*)": "<rootDir>/src/constants/$1",
     "test/(.*)": "<rootDir>/src/test/$1",
     "styles/(.*)": "<rootDir>/src/styles/$1",
     "images/(.*)": "<rootDir>/src/images/$1"

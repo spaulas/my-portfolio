@@ -10,6 +10,7 @@
     "@storybook/addon-knobs": "^6.1.17",
     "@storybook/preset-scss": "^1.0.3",
     "@types/classnames": "^2.2.11",
+    "@types/node": "^14.14.27",
     "@types/react-dom": "^17.0.0",
     "@types/react-helmet": "^6.1.0",
     "classnames": "^2.2.6",
@@ -79,6 +80,7 @@
       "components/(.*)": "<rootDir>/src/components/$1",
       "common/(.*)": "<rootDir>/src/components/common/$1",
       "pages/(.*)": "<rootDir>/src/pages/$1",
+      "constants/(.*)": "<rootDir>/src/constants/$1",
       "test/(.*)": "<rootDir>/src/test/$1",
       "styles/(.*)": "<rootDir>/src/styles/$1",
       "images/(.*)": "<rootDir>/src/images/$1"

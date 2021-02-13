@@ -61,6 +61,30 @@
     }
   }
 
+  &--timeline {
+    &:hover {
+      & > .color-icon__container {
+        height: 52px;
+      }
+    }
+  }
+
+  &--timeline & {
+    &__container {
+      height: 32px;
+    }
+
+    &__altered {
+      transition: 0.2s ease;
+      height: 32px;
+    }
+
+    &__color {
+      transition: 0.2s ease;
+      height: 52px;
+    }
+  }
+
   &--smaller & {
     &__container {
       height: 40px;
@@ -73,6 +97,5 @@
     &__color {
       height: 40px;
     }
-
   }
 }

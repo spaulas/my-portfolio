@@ -1,5 +1,6 @@
 export type Props = {
   title?: string;
-  type: "tech" | "action" | "social";
+  subtitle?: string;
+  type: "tech" | "action" | "social" | "timeline";
   extraClass?: string;
 };

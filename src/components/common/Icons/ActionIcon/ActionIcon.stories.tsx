@@ -11,7 +11,7 @@ const lightMode = require("images/icons/light-blue/action-icons/icon-light-blue_
 const website = require("images/icons/light-blue/action-icons/icon-light-blue__website.png");
 
 export default {
-  title: "Common",
+  title: "Common/Icons",
   argTypes: {
     title: {
       control: {

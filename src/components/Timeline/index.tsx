@@ -4,7 +4,7 @@ import { Props } from "./types.d";
 import { TIMELINE, TimelineText } from "@constants/Timeline";
 import "./Timeline.scss";
 
-function Timeline({ storybook, extraClass }: Props) {
+function Timeline({ storybook, extraClass="" }: Props) {
   return (
     <div className={`timeline ${extraClass}`}>
       {TIMELINE.map(

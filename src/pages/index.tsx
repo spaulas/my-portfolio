@@ -7,9 +7,6 @@ import animationSocialNetwork from "@images/animations/social-network_lottie.jso
 const IndexPage = () => (
   <>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
     <ProjectCover
       title="Social Network"
       animationData={animationSocialNetwork}

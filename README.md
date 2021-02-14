@@ -63,6 +63,12 @@ gatsby develop
 
 <h3 align="left">Storybook</h3>
 
+<p>Firstly, change the environment variable "IMAGES_SOURCE" to "STORYBOOK".</p>
+
+```
+IMAGES_SOURCE="STORYBOOK"
+```
+
 ```
 npm run storybook
 ```

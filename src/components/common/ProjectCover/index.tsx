@@ -4,7 +4,12 @@ import { Props } from "./types.d";
 import ProjectTitle from "@common/ProjectTitle";
 import Lottie from "react-lottie";
 
-function ProjectCover({ title, animationData, extraClass = "" }: Props) {
+function ProjectCover({
+  title,
+  animationData,
+  size: { width, height },
+  extraClass = "",
+}: Props) {
   const [playing, setPlaying] = useState<boolean>(false);
   const [direction, setDirection] = useState<number>(1);
 
@@ -41,8 +46,8 @@ function ProjectCover({ title, animationData, extraClass = "" }: Props) {
               preserveAspectRatio: "xMidYMid slice",
             },
           }}
-          height={600}
-          width={540}
+          width={width}
+          height={height}
           isPaused={!playing}
         />
       </div>

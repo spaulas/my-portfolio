@@ -1,7 +1,7 @@
 import React from "react";
 
-import Image from "@common/Image";
 import SEO from "@common/SEO";
+import ProjectCover from "../components/common/ProjectCover/index";
 
 const IndexPage = () => (
   <>
@@ -9,9 +9,7 @@ const IndexPage = () => (
     <h1>Hi people</h1>
     <p>Welcome to your new Gatsby site.</p>
     <p>Now go build something great.</p>
-    <div style={{ maxWidth: "300px", marginBottom: "1.45rem" }}>
-      <Image src="icons/light-blue/social-icons/icon-light-blue__github.png" />
-    </div>
+    <ProjectCover title="Solitaire" url="https://assets6.lottiefiles.com/packages/lf20_kbuumggs.json" />
   </>
 );
 

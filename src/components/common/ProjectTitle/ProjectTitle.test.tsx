@@ -2,7 +2,7 @@ import React from "react";
 import ProjectTitle from "./index";
 import { CreateContainerType, createContainer } from "@test/domManipulators";
 
-describe("<Timeline />", () => {
+describe("<ProjectTitle />", () => {
   let container: CreateContainerType["container"];
   let render: CreateContainerType["render"];
 

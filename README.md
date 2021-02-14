@@ -69,6 +69,8 @@ gatsby develop
 IMAGES_SOURCE="STORYBOOK"
 ```
 
+<p>Then, run:</p>
+
 ```
 npm run storybook
 ```

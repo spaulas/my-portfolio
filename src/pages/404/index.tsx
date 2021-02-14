@@ -1,6 +1,6 @@
 import React from "react";
 
-import SEO from "@common/SEO";
+import SEO from "common/SEO";
 
 const NotFoundPage = () => (
   <>

@@ -38,12 +38,12 @@ module.exports = {
       options: {
         src: path.join(__dirname, "src"),
         "@pages": path.join(__dirname, "src/pages"),
-        "@constants": path.join(__dirname, "src/constants"),
+        "constants": path.join(__dirname, "src/constants"),
         "@components": path.join(__dirname, "src/components"),
-        "@common": path.join(__dirname, "src/components/common"),
-        "@test": path.join(__dirname, "src/test"),
+        "common": path.join(__dirname, "src/components/common"),
+        "testHelpers": path.join(__dirname, "src/test"),
         "@styles": path.join(__dirname, "src/styles"),
-        "@images": path.join(__dirname, "src/images"),
+        "imgAssets": path.join(__dirname, "src/images"),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

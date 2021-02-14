@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectTitle from "./index";
-import { CreateContainerType, createContainer } from "@test/domManipulators";
+import { CreateContainerType, createContainer } from "testHelpers/domManipulators";
 
 describe("<ProjectTitle />", () => {
   let container: CreateContainerType["container"];

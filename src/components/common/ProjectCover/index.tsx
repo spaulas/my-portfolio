@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./ProjectCover.scss";
 import { Props } from "./types.d";
-import ProjectTitle from "@common/ProjectTitle";
+import ProjectTitle from "common/ProjectTitle";
 import Lottie from "react-lottie";
 
 function ProjectCover({

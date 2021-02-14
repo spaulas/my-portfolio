@@ -1,6 +1,6 @@
 import React from "react";
-import CircleHover from "@common/CircleHover";
-import Image from "@common/Image";
+import CircleHover from "common/CircleHover";
+import Image from "common/Image";
 import { Props } from "./types";
 import "./ColorIcon.scss";
 import classNames from "classnames";

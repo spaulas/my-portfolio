@@ -1,7 +1,7 @@
 import React from "react";
-import ColorIcon from "@common/Icons/ColorIcon";
+import ColorIcon from "common/Icons/ColorIcon";
 import { Props } from "./types";
-import { TIMELINE, TimelineText } from "@constants/Timeline";
+import { TIMELINE, TimelineText } from "constants/Timeline";
 import "./Timeline.scss";
 
 function Timeline({ storybook, extraClass="" }: Props) {

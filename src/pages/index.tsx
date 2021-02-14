@@ -1,8 +1,8 @@
 import React from "react";
 
-import SEO from "@common/SEO";
+import SEO from "common/SEO";
 import ProjectCover from "../components/common/ProjectCover/index";
-import animationSocialNetwork from "@images/animations/social-network_lottie.json";
+import animationSocialNetwork from "imgAssets/animations/social-network_lottie.json";
 
 const IndexPage = () => (
   <>

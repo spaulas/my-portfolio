@@ -8,8 +8,8 @@ jest.mock("react-lottie", () => ({
 
 import React from "react";
 import ProjectCover from "./index";
-import { CreateContainerType, createContainer } from "@test/domManipulators";
-import animationData from "@images/animations/solitaire_lottie.json";
+import { CreateContainerType, createContainer } from "testHelpers/domManipulators";
+import animationData from "imgAssets/animations/solitaire_lottie.json";
 
 // TODO add tests for mouse over and mouse leave
 describe("<ProjectCover />", () => {

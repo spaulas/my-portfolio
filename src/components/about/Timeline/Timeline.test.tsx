@@ -1,5 +1,5 @@
 /* eslint-disable react/display-name */
-jest.mock("@common/Image/index.tsx", () => ({
+jest.mock("common/Image/index.tsx", () => ({
   __esModule: true,
   default: (props: { className: string }) => (
     <div className={props.className}></div>
@@ -8,8 +8,8 @@ jest.mock("@common/Image/index.tsx", () => ({
 
 import React from "react";
 import Timeline from "./index";
-import { CreateContainerType, createContainer } from "@test/domManipulators";
-import { TIMELINE, TimelineText } from "@constants/Timeline";
+import { CreateContainerType, createContainer } from "testHelpers/domManipulators";
+import { TIMELINE, TimelineText } from "constants/Timeline";
 
 describe("<Timeline />", () => {
   let container: CreateContainerType["container"];
@@ -24,16 +24,16 @@ describe("<Timeline />", () => {
       const item = container.querySelector(
         `div.timeline>.timeline__icon--${ID}`
       );
-      
+
       expect(
         item?.querySelector(
           ".circle-hover__title-container>.circle-hover__title"
-        ).textContent
+        )?.textContent
       ).toEqual(TITLE);
       expect(
         item?.querySelector(
           ".circle-hover__subtitle-container>.circle-hover__subtitle"
-        ).textContent
+        )?.textContent
       ).toEqual(YEAR);
     });
   };

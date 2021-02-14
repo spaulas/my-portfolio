@@ -1,40 +1,52 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-  },
+  parser: "@typescript-eslint/parser",
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
   ],
-  globals: {
-    Atomics: "readonly",
-    SharedArrayBuffer: "readonly",
+  settings: {
+    react: {
+      version: "detect",
+    },
   },
-  parser: "@typescript-eslint/parser",
+  env: {
+    browser: true,
+    node: true,
+    es6: true,
+  },
+  plugins: ["@typescript-eslint", "react"],
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
-    ecmaVersion: 12,
-    sourceType: "module",
+    ecmaVersion: 2018, // Allows for the parsing of modern ECMAScript features
+    sourceType: "module", // Allows for the use of imports
   },
-  plugins: ["react", "@typescript-eslint"],
   rules: {
+    "react/prop-types": "off", // Disable prop-types as we use TypeScript for type checking
+    "@typescript-eslint/explicit-function-return-type": "off",
     indent: ["error", 2],
     "linebreak-style": ["error", "unix"],
     quotes: ["error", "double"],
     semi: ["error", "always"],
     "no-undef": "warn",
     "@typescript-eslint/no-unused-vars": "warn",
-  },overrides: [
+  },
+  overrides: [
+    // Override some TypeScript rules just for .js files
     {
-      files: [
-        "**/*.test.tsx"
-      ],
+      files: ["*.js"],
+      rules: {
+        "@typescript-eslint/no-var-requires": "off", //
+      },
+    },
+    {
+      files: ["**/*.test.tsx"],
       env: {
-        jest: true // now **/*.test.js files' env has both es6 *and* jest
+        jest: true, // now **/*.test.js files' env has both es6 *and* jest
       },
       // Can't extend in overrides: https://github.com/eslint/eslint/issues/8813
       // "extends": ["plugin:jest/recommended"]
@@ -44,8 +56,8 @@ module.exports = {
         "jest/no-focused-tests": "error",
         "jest/no-identical-title": "error",
         "jest/prefer-to-have-length": "warn",
-        "jest/valid-expect": "error"
-      }
-    }
+        "jest/valid-expect": "error",
+      },
+    },
   ],
 };

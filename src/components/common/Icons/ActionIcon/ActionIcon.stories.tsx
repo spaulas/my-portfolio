@@ -2,13 +2,13 @@
 import React from "react";
 import ActionIcon from "./index";
 
-const about = require("@images/icons/light-blue/action-icons/icon-light-blue__about.png");
-const back = require("@images/icons/light-blue/action-icons/icon-light-blue__back.png");
-const close = require("@images/icons/light-blue/action-icons/icon-light-blue__close.png");
-const code = require("@images/icons/light-blue/action-icons/icon-light-blue__code.png");
-const language = require("@images/icons/light-blue/action-icons/icon-light-blue__language.png");
-const lightMode = require("@images/icons/light-blue/action-icons/icon-light-blue__light-mode.png");
-const website = require("@images/icons/light-blue/action-icons/icon-light-blue__website.png");
+const about = require("imgAssets/icons/light-blue/action-icons/icon-light-blue__about.png");
+const back = require("imgAssets/icons/light-blue/action-icons/icon-light-blue__back.png");
+const close = require("imgAssets/icons/light-blue/action-icons/icon-light-blue__close.png");
+const code = require("imgAssets/icons/light-blue/action-icons/icon-light-blue__code.png");
+const language = require("imgAssets/icons/light-blue/action-icons/icon-light-blue__language.png");
+const lightMode = require("imgAssets/icons/light-blue/action-icons/icon-light-blue__light-mode.png");
+const website = require("imgAssets/icons/light-blue/action-icons/icon-light-blue__website.png");
 
 export default {
   title: "Common/Icons",

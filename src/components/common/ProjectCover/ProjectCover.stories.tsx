@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCover from "./index";
-import animationSolitaire from "@images/animations/solitaire_lottie.json";
-import animationSocialNetwork from "@images/animations/social-network_lottie.json";
+import animationSolitaire from "imgAssets/animations/solitaire_lottie.json";
+import animationSocialNetwork from "imgAssets/animations/social-network_lottie.json";
 
 export default {
   title: "Common",

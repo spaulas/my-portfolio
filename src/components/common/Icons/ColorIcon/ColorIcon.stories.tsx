@@ -7,78 +7,78 @@ import ColorIcon from "./index";
  * TECH ICONS
  ***************/
 
-const githubLightBlue = require("@images/icons/light-blue/social-icons/icon-light-blue__github.png");
-const githubColor = require("@images/icons/color/social-icons/icon-color__github.png");
+const githubLightBlue = require("imgAssets/icons/light-blue/social-icons/icon-light-blue__github.png");
+const githubColor = require("imgAssets/icons/color/social-icons/icon-color__github.png");
 
-const linkedinLightBlue = require("@images/icons/light-blue/social-icons/icon-light-blue__linkedin.png");
-const linkedinColor = require("@images/icons/color/social-icons/icon-color__linkedin.png");
+const linkedinLightBlue = require("imgAssets/icons/light-blue/social-icons/icon-light-blue__linkedin.png");
+const linkedinColor = require("imgAssets/icons/color/social-icons/icon-color__linkedin.png");
 
-const antdLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__antd.png");
-const antdColor = require("@images/icons/color/tech-icons/icon-color__antd.png");
+const antdLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__antd.png");
+const antdColor = require("imgAssets/icons/color/tech-icons/icon-color__antd.png");
 
-const cssLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__css.png");
-const cssColor = require("@images/icons/color/tech-icons/icon-color__css.png");
+const cssLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__css.png");
+const cssColor = require("imgAssets/icons/color/tech-icons/icon-color__css.png");
 
-const cypressLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__cypress.png");
-const cypressColor = require("@images/icons/color/tech-icons/icon-color__cypress.png");
+const cypressLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__cypress.png");
+const cypressColor = require("imgAssets/icons/color/tech-icons/icon-color__cypress.png");
 
-const firebaseLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__firebase.png");
-const firebaseColor = require("@images/icons/color/tech-icons/icon-color__firebase.png");
+const firebaseLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__firebase.png");
+const firebaseColor = require("imgAssets/icons/color/tech-icons/icon-color__firebase.png");
 
-const htmlLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__html.png");
-const htmlColor = require("@images/icons/color/tech-icons/icon-color__html.png");
+const htmlLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__html.png");
+const htmlColor = require("imgAssets/icons/color/tech-icons/icon-color__html.png");
 
-const javascriptLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__javascript.png");
-const javascriptColor = require("@images/icons/color/tech-icons/icon-color__javascript.png");
+const javascriptLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__javascript.png");
+const javascriptColor = require("imgAssets/icons/color/tech-icons/icon-color__javascript.png");
 
-const jestLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__jest.png");
-const jestColor = require("@images/icons/color/tech-icons/icon-color__jest.png");
+const jestLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__jest.png");
+const jestColor = require("imgAssets/icons/color/tech-icons/icon-color__jest.png");
 
-const lessLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__less.png");
-const lessColor = require("@images/icons/color/tech-icons/icon-color__less.jpg");
+const lessLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__less.png");
+const lessColor = require("imgAssets/icons/color/tech-icons/icon-color__less.jpg");
 
-const materialuiLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__materialui.png");
-const materialuiColor = require("@images/icons/color/tech-icons/icon-color__materialui.png");
+const materialuiLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__materialui.png");
+const materialuiColor = require("imgAssets/icons/color/tech-icons/icon-color__materialui.png");
 
-const mysqlLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__mysql.png");
-const mysqlColor = require("@images/icons/color/tech-icons/icon-color__mysql.png");
+const mysqlLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__mysql.png");
+const mysqlColor = require("imgAssets/icons/color/tech-icons/icon-color__mysql.png");
 
-const nodeLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__node.png");
-const nodeColor = require("@images/icons/color/tech-icons/icon-color__node.png");
+const nodeLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__node.png");
+const nodeColor = require("imgAssets/icons/color/tech-icons/icon-color__node.png");
 
-const phpLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__php.png");
-const phpColor = require("@images/icons/color/tech-icons/icon-color__php.png");
+const phpLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__php.png");
+const phpColor = require("imgAssets/icons/color/tech-icons/icon-color__php.png");
 
-const reactLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__react.png");
-const reactColor = require("@images/icons/color/tech-icons/icon-color__react.png");
+const reactLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__react.png");
+const reactColor = require("imgAssets/icons/color/tech-icons/icon-color__react.png");
 
-const reduxSagaLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__redux-saga.png");
-const reduxSagaColor = require("@images/icons/color/tech-icons/icon-color__redux-saga.svg");
+const reduxSagaLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__redux-saga.png");
+const reduxSagaColor = require("imgAssets/icons/color/tech-icons/icon-color__redux-saga.svg");
 
-const reduxLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__redux.png");
-const reduxColor = require("@images/icons/color/tech-icons/icon-color__redux.png");
+const reduxLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__redux.png");
+const reduxColor = require("imgAssets/icons/color/tech-icons/icon-color__redux.png");
 
-const sassLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__sass.png");
-const sassColor = require("@images/icons/color/tech-icons/icon-color__sass.svg");
+const sassLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__sass.png");
+const sassColor = require("imgAssets/icons/color/tech-icons/icon-color__sass.svg");
 
-const typescriptLightBlue = require("@images/icons/light-blue/tech-icons/icon-light-blue__typescript.png");
-const typescriptColor = require("@images/icons/color/tech-icons/icon-color__typescript.png");
+const typescriptLightBlue = require("imgAssets/icons/light-blue/tech-icons/icon-light-blue__typescript.png");
+const typescriptColor = require("imgAssets/icons/color/tech-icons/icon-color__typescript.png");
 
 /***************
  * TIMELINE ICONS
  ***************/
 
-const birthNavyBlue = require("@images/icons/navy-blue/timeline-icons/icon-navy-blue__birth.png");
-const birthColor = require("@images/icons/color/timeline-icons/icon-color__birth.png");
+const birthNavyBlue = require("imgAssets/icons/navy-blue/timeline-icons/icon-navy-blue__birth.png");
+const birthColor = require("imgAssets/icons/color/timeline-icons/icon-color__birth.png");
 
-const hapibotNavyBlue = require("@images/icons/navy-blue/timeline-icons/icon-navy-blue__hapibot.png");
-const hapibotColor = require("@images/icons/color/timeline-icons/icon-color__hapibot.png");
+const hapibotNavyBlue = require("imgAssets/icons/navy-blue/timeline-icons/icon-navy-blue__hapibot.png");
+const hapibotColor = require("imgAssets/icons/color/timeline-icons/icon-color__hapibot.png");
 
-const uaNavyBlue = require("@images/icons/navy-blue/timeline-icons/icon-navy-blue__ua.png");
-const uaColor = require("@images/icons/color/timeline-icons/icon-color__ua.png");
+const uaNavyBlue = require("imgAssets/icons/navy-blue/timeline-icons/icon-navy-blue__ua.png");
+const uaColor = require("imgAssets/icons/color/timeline-icons/icon-color__ua.png");
 
-const wavecomNavyBlue = require("@images/icons/navy-blue/timeline-icons/icon-navy-blue__wavecom.png");
-const wavecomColor = require("@images/icons/color/timeline-icons/icon-color__wavecom.png");
+const wavecomNavyBlue = require("imgAssets/icons/navy-blue/timeline-icons/icon-navy-blue__wavecom.png");
+const wavecomColor = require("imgAssets/icons/color/timeline-icons/icon-color__wavecom.png");
 
 export default {
   title: "Common/Icons",

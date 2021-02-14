@@ -19,6 +19,10 @@ describe("<ProjectCover />", () => {
   const defaultProps = {
     title: "Title",
     animationData,
+    size: {
+      width: 540,
+      height: 600
+    }
   };
 
   beforeEach(() => {

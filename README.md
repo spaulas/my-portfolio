@@ -14,8 +14,8 @@
 
 <p>Portfolio implemented by scratch with ReactJS using Gatsby.</p>
 <p>With this project, I aim to improve my current portfolio, showing new skills that I acquired over my still not very long career.</p>
-<p>Therefore, I prepared a mockup using Figma and the first step is to implement all the basic components and write their documentation using Storybook.</p>
-<p>All development steps are documented on the <a href="https://github.com/spaulas/my-portfolio/projects/1">Project</a> section of this repository.</p>
+<p>Therefore, I prepared a mockup using Figma, and the first step is to implement all the basic components and write their documentation using Storybook.</p>
+<p>All development steps are documented in the <a href="https://github.com/spaulas/my-portfolio/projects/1">Project</a> section of this repository.</p>
 
 
 <h3 align="left">Mock up: Figma</h3>

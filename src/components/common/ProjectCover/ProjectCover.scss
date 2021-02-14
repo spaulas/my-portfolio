@@ -1,0 +1,26 @@
+.project-cover {
+  width: 100%;
+  height: 900px;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  &__animation-container {
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__title {
+    z-index: 2;
+    margin: -120px auto 0 auto;
+    transition: 0.3s ease;
+  }
+
+  &:hover & {
+    &__title {
+      transform: scale(1.1);
+    }
+  }
+}

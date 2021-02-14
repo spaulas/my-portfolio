@@ -1,5 +1,5 @@
 export type Props = {
   title: string;
-  url: string;
+  animationData: any;
   extraClass?: string;
 };

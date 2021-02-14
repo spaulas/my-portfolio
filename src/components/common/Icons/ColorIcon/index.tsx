@@ -12,7 +12,6 @@ function ColorIcon({
   srcAltered,
   srcColor,
   smaller,
-  storybook,
   extraClass,
 }: Props) {
   const colorIconClass = classNames("color-icon", extraClass, {
@@ -22,7 +21,7 @@ function ColorIcon({
 
   return (
     <CircleHover type={type} title={title} subtitle={subtitle} extraClass={colorIconClass}>
-      {!storybook ? (
+      {!process.env.IMAGES_SOURCE ? (
         <div className="color-icon__container">
           <Image src={srcAltered} className="color-icon__altered" />
           <Image src={srcColor} className="color-icon__color" />

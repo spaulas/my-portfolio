@@ -6,5 +6,5 @@ export default {
 };
 
 export const TimelineC = (): JSX.Element => {
-  return <Timeline storybook />;
+  return <Timeline />;
 };

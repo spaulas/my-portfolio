@@ -56,7 +56,7 @@ export const ActionIconC = (args: { title: string }): JSX.Element => {
     break;
   }
 
-  return <ActionIcon src={src} storybook />;
+  return <ActionIcon src={src} />;
 };
 
 ActionIconC.args = {

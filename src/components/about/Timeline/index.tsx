@@ -4,7 +4,7 @@ import { Props } from "./types";
 import { TIMELINE, TimelineText } from "constants/Timeline";
 import "./Timeline.scss";
 
-function Timeline({ storybook, extraClass="" }: Props) {
+function Timeline({ extraClass = "" }: Props) {
   return (
     <div className={`timeline ${extraClass}`}>
       {TIMELINE.map(
@@ -16,7 +16,6 @@ function Timeline({ storybook, extraClass="" }: Props) {
             subtitle={YEAR}
             srcAltered={NAVY_BLUE_ICON}
             srcColor={COLOR_ICON}
-            storybook={storybook}
             extraClass={`timeline__icon--${ID}`}
           />
         )

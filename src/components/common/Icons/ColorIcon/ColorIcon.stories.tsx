@@ -311,7 +311,7 @@ export const ColorIconC = (args: Props): JSX.Element => {
     };
   }
 
-  return <ColorIcon {...props} storybook />;
+  return <ColorIcon {...props} />;
 };
 
 ColorIconC.args = {

@@ -1,31 +1,20 @@
-import React, { useEffect, useRef } from "react";
-import lottie from "lottie-web";
+import React from "react";
+import { Player } from "@lottiefiles/react-lottie-player";
 
 import { Props } from "./types.d";
 import ProjectTitle from "@common/ProjectTitle";
 
-function ProjectCover({ title, animation, url, extraClass }: Props) {
-  let animationRef: any = useRef();
-
-  console.log("URL = ", url);
-
-  useEffect(() => {
-    const anim = lottie.loadAnimation({
-      container: animationRef.current,
-      renderer: "svg",
-      loop: true,
-      autoplay: true,
-      animationData: animation,
-    });
-    return () => anim.destroy(); // optional clean up for unmounting
-  }, []);
-
+function ProjectCover({ title, url, extraClass }: Props) {
   return (
     <div className={`project-cover ${extraClass}`}>
-      <div
-        className="project-cover__animation-container"
-        ref={animationRef}
-      ></div>
+      <Player
+        src={url}
+        background="transparent"
+        speed={1}
+        //style="width: 300px; height: 300px;"
+        hover
+        autoplay
+      ></Player>
       <ProjectTitle title={title} />
     </div>
   );

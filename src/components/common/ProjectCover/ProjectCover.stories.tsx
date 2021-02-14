@@ -9,10 +9,8 @@ export default {
   },
 };
 
-const animation = "@images/animations/solitaire_lottie.json";
-
 export const ProjectCoverC = (/* args: Props */): JSX.Element => {
-  return <ProjectCover title="Solitaire" url="" animation={animation} />;
+  return <ProjectCover title="Solitaire" url="https://assets6.lottiefiles.com/packages/lf20_kbuumggs.json" />;
 };
 
 ProjectCoverC.args = { title: "Title" };

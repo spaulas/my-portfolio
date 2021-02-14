@@ -6,6 +6,7 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "@fontsource/montserrat": "^4.2.1",
+    "@lottiefiles/react-lottie-player": "^3.0.0",
     "@storybook/addon-graphql": "^6.1.17",
     "@storybook/addon-knobs": "^6.1.17",
     "@storybook/preset-scss": "^1.0.3",
@@ -26,7 +27,6 @@
     "gatsby-plugin-typescript": "^2.12.0",
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-transformer-sharp": "^2.12.0",
-    "lottie-web": "^5.7.6",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
